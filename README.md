@@ -1,10 +1,6 @@
 # Software AG Reference Architecture 
 
-link to site https://github.com/bhilchenbach/sagtest.io
 
-
-von carlos:
-<iframe src="https://feature-reference-architecture--brave-goldstine-8dd131.netlify.com/site/reference-architecture/software-ag-reference-architecture.html" style="border:none;"></iframe> 
 
 ### Aims 
 
@@ -72,7 +68,10 @@ The above reference architecture can be used as the basis for your enterprise sp
 
 https://github.com/SoftwareAG/softwareag-reference-architecture 
 
-
-
-
 Software AG is happy to work with you on an individual solution architecture that suits your specific requirements. 
+
+
+#TEST AREA
+
+Embedded with iframe:
+<iframe src="https://feature-reference-architecture--brave-goldstine-8dd131.netlify.com/site/reference-architecture/software-ag-reference-architecture.html" style="border:none;"></iframe> 
