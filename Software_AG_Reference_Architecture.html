@@ -1,0 +1,1465 @@
+﻿<!DOCTYPE html>
+<html class="vp">
+<head>
+    <title>SAG Reference Architecture.vsdx</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="vp/jquery-3.1.1.min.js"></script>
+    <link href="vp/bootstrap-3.3.7.min.css" rel="stylesheet" />
+    <script src="vp/bootstrap-3.3.7.min.js"></script>
+    <link href="vp/bootstrap-switch-3.3.4.min.css" rel="stylesheet" />
+    <script src="vp/bootstrap-switch-3.3.4.min.js"></script>
+    
+        <!-- 	Manual Modifications from Visio Export  
+			======================================
+			I	TOGGLING CAPABILITY VIEW / PRODUCT VIEW 
+			Clicking on shape 'DEVICES / GATEWAYS' (shape306) toggles visibility of layer 'Capability labels'. To achieve this: 
+			a) below in window.svgpublish, for shape306 add ,"Props":{"nets":"10 Capability labels"},
+			b) paste the script for visibility toggling at the bottom of the page 
+			
+			II  MOUSEOVER TEXTS
+			a) See section below between 'begin' and 'end' insertion mouseover texts. 
+			Note that there are two different texts, one for capability view (first) and one for product view (second). 
+			b) In /vp/bootstrap-3.3.7.min.css, broaden the popover by setting maxwidth to 600 at  popover {...max-width:600px
+	-->  
+	
+    <link href="vp/vp-style-1.2.10.min.css" rel="stylesheet" />
+    <script>
+        window.svgpublish = {"shapes":{"shape28":{"Layers":[1],"Text":"CUSTOMERS, PARTNERS,\nSUPPLIERS"},"shape306":{"Layers":[1],"Text":"Toggle Capability View /Product View","Props":{"nets":"10 Capability labels"}},"shape263":{"Layers":[1],"Text":"MEDIATION \nAND PUBLISHING"},"shape264":{"Layers":[1],"Text":"CONNECTIVITY\nAND INTEGRATION"},"shape265":{"Layers":[1],"Text":"ANALYTICS"},"shape266":{"Layers":[1],"Text":"SERVING"},"shape16":{"Layers":[1],"Text":"THINGS"},"shape32":{"Layers":[1],"Text":"ON-PREMISE / \nPRIVATE CLOUD"},"shape275":{"ConnectedTo":["shape275"],"ConnectedFrom":["shape275"],"Layers":[1],"Text":""},"shape1078":{"Layers":[3],"Text":""},"shape1054":{"ConnectedTo":["shape1058"],"Layers":[6],"Text":" "},"shape80":{"Layers":[3],"Text":""},"shape1095":{"Layers":[3],"Text":""},"shape95":{"Layers":[3],"Text":""},"shape111":{"Layers":[3],"Text":""},"shape215":{"Layers":[3],"Text":""},"shape216":{"Layers":[3],"Text":""},"shape39":{"Layers":[3],"Text":""},"shape79":{"Layers":[3],"Text":""},"shape93":{"Layers":[3],"Text":""},"shape225":{"Layers":[3],"Text":""},"shape249":{"Layers":[3],"Text":""},"shape250":{"Layers":[3],"Text":""},"shape251":{"Layers":[3],"Text":""},"shape1004":{"Layers":[3],"Text":""},"shape1010":{"Layers":[3],"Text":""},"shape1025":{"Layers":[3],"Text":""},"shape1059":{"Layers":[3],"Text":""},"shape1064":{"Layers":[3],"Text":""},"shape1065":{"Layers":[3],"Text":""},"shape1066":{"Layers":[3],"Text":""},"shape1079":{"Layers":[3],"Text":""},"shape1083":{"ConnectedTo":["shape1032"],"Layers":[3],"Text":""},"shape1100":{"Layers":[3],"Text":""},"shape309":{"Layers":[3],"Text":""},"shape1105":{"Layers":[3],"Text":""},"shape1106":{"Layers":[3],"Text":""},"shape1109":{"Layers":[3],"Text":""},"shape1110":{"Layers":[3],"Text":""},"shape1112":{"Layers":[3],"Text":""},"shape1113":{"Layers":[3],"Text":""},"shape1114":{"Layers":[3],"Text":""},"shape237":{"Layers":[3],"Text":""},"shape1130":{"Layers":[3],"Text":""},"shape1133":{"Layers":[3],"Text":""},"shape1135":{"Layers":[3],"Text":""},"shape1136":{"Layers":[3],"Text":""},"shape11":{"Layers":[2],"Text":"Assets / \nDevices / Gateways"},"shape69":{"ConnectedTo":["shape295"],"Layers":[2],"Text":"Applications"},"shape1057":{"ConnectedTo":["shape1043"],"Layers":[2],"Text":"Microservices"},"shape1058":{"ConnectedFrom":["shape1054"],"Layers":[2],"Text":"Mainframe & Legacy"},"shape34":{"ConnectedFrom":["shape286"],"Layers":[2],"Text":"Historians"},"shape102":{"ConnectedFrom":["shape289"],"Layers":[2],"Text":"BI Tools"},"shape98":{"ConnectedFrom":["shape1037"],"Layers":[2],"Text":"SaaS / DBaaS"},"shape1127":{"ConnectedFrom":["shape285"],"Layers":[2],"Text":"B2B Interfaces"},"shape1131":{"ConnectedFrom":["shape1072"],"Layers":[2],"Text":"B2B Interfaces"},"shape1132":{"Layers":[2],"Text":"API Consumers"},"shape1001":{"ConnectedFrom":["shape1038","shape1037"],"Layers":[2],"Text":"API Consumers"},"shape1097":{"ConnectedTo":["shape299"],"Layers":[2],"Text":"Files"},"shape89":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.cloud/site/product/webmethods-b2b.html","Description":""}],"Layers":[4],"Text":"wM.io\nB2B"},"shape88":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.cloud/site/product/webmethods-io-integration.html","Description":""}],"ConnectedTo":["shape295"],"Layers":[4],"Text":"wM.io\nIntegration"},"shape254":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/internet_of_things/iot_device_mgmt/default.html","Description":""}],"ConnectedTo":["shape295"],"ConnectedFrom":["shape284"],"Layers":[4],"Text":"Cumulocity IoT Edge"},"shape54":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/data_analytics/predictive_analytics/default.html","Description":""}],"Layers":[4],"Text":"Cumulocity IoT\nPredictive Analytics"},"shape38":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/data_analytics/analytics/default.html","Description":""}],"Layers":[4],"Text":"Apama for  Cumulocity IoT"},"shape56":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/de/products/process/low_code/default.html","Description":""}],"Layers":[4],"Text":"wM AgileApps"},"shape82":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/de/products/process/low_code/default.html","Description":""}],"Layers":[4],"Text":"wM AgileApps"},"shape1014":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/integration/integration_server/default.html","Description":""}],"ConnectedFrom":["shape1119"],"Layers":[4],"Text":"wM Integration Server\nwith\nUniversal\nMessaging"},"shape1018":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"Layers":[4],"Text":"wM Active Transfer"},"shape47":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/internet_of_things/iot_device_mgmt/default.html","Description":""}],"Layers":[4],"Text":"Cumulocity IoT Core"},"shape49":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/data_analytics/analytics/default.html","Description":""}],"Layers":[4],"Text":"Apama for Cumulocity IoT"},"shape55":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/de/products/az/cumulocity-iot-datahub/default.html","Description":""}],"Layers":[4],"Text":"Cumulocity IoT    \n  Data Hub"},"shape6":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/de/products/data_analytics/industrial_analytics/default.html","Description":""}],"Layers":[4],"Text":"TrendMiner"},"shape1125":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/data_analytics/analytics/default.html","Description":""}],"Layers":[4],"Text":"wM.io API \nGateway"},"shape1124":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/data_analytics/analytics/default.html","Description":""}],"Layers":[4],"Text":"wM.io API \nPortal"},"shape1118":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"Layers":[4],"Text":"wM Microservices Runtime"},"shape1121":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"Layers":[4],"Text":"wM Trading Networks"},"shape1115":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"Layers":[4],"Text":"wM Microgateway"},"shape1119":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"ConnectedTo":["shape1014"],"Layers":[4],"Text":"wM \nAPI Gateway"},"shape1120":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"Layers":[4],"Text":"wM \nAPI Portal"},"shape1122":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/de/products/process/low_code/default.html","Description":""}],"Layers":[4],"Text":"Cumulocity IoT\nMicroservice Hosting"},"shape295":{"ConnectedTo":["shape1061"],"ConnectedFrom":["shape254","shape69","shape88"],"Layers":[6],"Text":"\nIntegration & Messaging\n"},"shape285":{"ConnectedTo":["shape1127"],"ConnectedFrom":["shape287"],"Layers":[6],"Text":"B2B Integration  (iPaaS)"},"shape287":{"ConnectedTo":["shape1037","shape285"],"Layers":[6],"Text":"Integration\n(IPaaS)"},"shape292":{"Layers":[6],"Text":"Streaming Analytics"},"shape294":{"Layers":[6],"Text":"Low-Code App Development"},"shape1037":{"ConnectedTo":["shape1038","shape98","shape1001"],"ConnectedFrom":["shape287"],"Layers":[6],"Text":"API Gateway"},"shape1038":{"ConnectedTo":["shape1001"],"ConnectedFrom":["shape1037"],"Layers":[6],"Text":"API Portal"},"shape1061":{"ConnectedFrom":["shape295","shape1043"],"Layers":[6],"Text":"Embedded Integration"},"shape1072":{"ConnectedTo":["shape1131"],"Layers":[6],"Text":"B2B Integration "},"shape1043":{"ConnectedTo":["shape1061"],"ConnectedFrom":["shape1057"],"Layers":[6],"Text":"Embedded \nAPI Gateway"},"shape299":{"ConnectedTo":["shape1137"],"ConnectedFrom":["shape1097"],"Layers":[6],"Text":"Managed File Transfer"},"shape290":{"ConnectedFrom":["shape291"],"Layers":[6],"Text":"Streaming Analytics"},"shape291":{"ConnectedTo":["shape290"],"Layers":[6],"Text":"Predictive Analytics"},"shape289":{"ConnectedTo":["shape102"],"Layers":[6],"Text":"IoT Analytical Store & Query"},"shape1032":{"ConnectedTo":["shape1033"],"ConnectedFrom":["shape1083"],"Layers":[6],"Text":"API Gateway"},"shape1033":{"ConnectedFrom":["shape1032"],"Layers":[6],"Text":"API Portal"},"shape284":{"ConnectedTo":["shape254"],"Layers":[6],"Text":"IoT Device & Connectivity Management "},"shape293":{"Layers":[6],"Text":"Low-Code App Development"},"shape1111":{"Layers":[6],"Text":"Application Enablement"},"shape286":{"ConnectedTo":["shape34"],"Layers":[6],"Text":"Self-service Industr. Analytics"},"shape288":{"Layers":[6],"Text":"IoT Device &   Connectivity Management"},"shape1137":{"ConnectedFrom":["shape299"],"Layers":[2],"Text":"Files"},"shape1138":{"DefaultLink":1,"Links":[{"PageId":-1,"Address":"https://www.softwareag.com/corporate/products/webmethods_integration/mft/default.html","Description":""}],"Layers":[4],"Text":"Active Transfer Gateway"},"shape1134":{"Layers":[6],"Text":"File Transfer Gateway"}},"pages":[{"Name":"Reference Architecture","Id":0,"FileName":"Reference Architecture 20-01-14.html"},{"Name":"Integration","Id":4,"FileName":"Reference Architecture 20-01-14__4.html"}],"currentPage":{"Name":"Reference Architecture","Id":0,"FileName":"Reference Architecture 20-01-14.html"},"layers":[{"Name":"01 Background","Index":1},{"Name":"07 External shapes","Index":2},{"Name":"05 Connectors","Index":3},{"Name":"08 Product Name labels","Index":4},{"Name":"21 Icons","Index":5},{"Name":"10 Capability labels","Index":6}],"enableProps":true,"twoFingersTouch":false,"enableLinks":true,"enablePages":true,"enablePageLookup":false,"enableZoomCtrl":false,"enableZoomShift":false,"enableSearch":false,"enableMultiPageSearch":false,"enableCode":false,"enableSidebar":true,"enableTooltips":false,"enableSelection":false,"enableLayers":true,"enableFollowHyperlinks":true,"openHyperlinksInNewWindow":true,"rightSidebar":false,"alwaysHideSidebar":false,"enableSidbarTitle":false,"enableSidebarHtml":false,"enableTooltipHtml":false,"enableD3":false,"tooltipPlacement":"","popoverPlacement":"","enablePopovers":false,"enablePopoverHtml":false,"tooltipTrigger":"","tooltipOutsideClick":false,"tooltipTimeout":false,"tooltipTimeoutShow":"","tooltipTimeoutHide":"","popoverTrigger":"","popoverTimeout":false,"popoverOutsideClick":false,"popoverTimeoutShow":"","popoverTimeoutHide":""}
+        $(document).ready(function () { $("div.svg").panzoom({ svg: $("div.svg > svg").get(0), viewBox: "0 0 841.89 473.386" }).removeClass("appear");
+
+<!-- Begin insertion mouseover texts, first is capability view, second is product view -->
+
+	
+	$(document).ready(function () {
+			
+
+		
+	    $("#shape1134").popover({
+        title: "<b>File Transfer Gateway</b>",
+        content: "<ul><li>API Gateway for usage with Managed File Transfer </li><li>Identification and access management, encryption</li><li>Mediation and transformation</li><li>Definition and enforcement of SLAs</li><li>Traffic management (routing, throttling, ...) </li><li>Threat protection</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+ 
+	    $("#shape1138").popover({
+        title: "<b>Active Transfer Gateway</b>",
+        content: "<ul><li>Version of the API Gateway for usage with Active Transfer </li><li>Identification and access management, encryption</li><li>Mediation and transformation</li><li>Definition and enforcement of SLAs</li><li>Traffic management (routing, throttling, ...) </li><li>Threat protection</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+		
+
+		
+	    $("#shape1043").popover({
+        title: "<b>Embedded API Gateway</b>",
+        content: "<ul><li>Lightweight version of the API Gateway for usage in Microservices Architectures </li><li>Secure Microservices in a distributed Architecture </li><li>Works with webMethods API Gateway or as a standalone solution</li><li>Support east-west traffic while preventing overloading of main gateways</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape1115").popover({
+        title: "<b>webMethods Microgateway</b>",
+        content: "<ul><li>Lightweight version of the API Gateway for usage in Microservices Architectures </li><li>Identification and access management, encryption</li><li>Mediation and transformation</li><li>Definition and enforcement of SLAs</li><li>Traffic management (routing, throttling, ...) </li><li>Threat protection</li><li>API monitoring and analytics</li><li>API development portal (interactive console, developer sandbox, API mocking, …)</li><li>Secure Microservices in a distributed Architecture </li><li>Works with webMethods API Gateway or as a standalone solution</li><li>Support east-west traffic while preventing overloading of main gateways</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+		
+	
+	
+	    $("#shape284").popover({
+        title: "<b><b>IoT Device and Connectivity Management (SaaS)</b>",
+        content: "<ul><li>Comprehensive management of IoT devices</li><li>Location, connection, remote control, and disconnection of devices</li><li>Extensive standard support (400+ fieldbus protocols)</li><li>Listing, searching, and grouping of connected devices </li><li>Viewing of device details and status, handling of alarms</li><li>Monitoring of device connection quality</li><li>Simulation and troubleshooting of devices</li><li>Managing device software, firmware, and credentials</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+	});	
+	
+	    $("#shape47").popover({
+        title: "<b>Cumulocity IoT Core</b>",
+        content: "<ul><li>Comprehensive management of IoT devices</li><li>Location, connection, remote control, and disconnection of devices</li><li>Extensive standard support (400+ fieldbus protocols)</li><li>Listing, searching, and grouping of connected devices </li><li>Viewing of device details and status, handling of alarms</li><li>Monitoring of device connection quality</li><li>Simulation and troubleshooting of devices</li><li>Managing device software, firmware, and credentials</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+	});	
+
+	
+	
+		    $("#shape288").popover({
+        title: "<b>IoT Device and Connectivity Management (Edge)</b>",
+        content: "<ul><li>Edge solution for device and application management (see there for more details) </li><li>Deployment at the Edge for autonomous IoT operation </li><li>Controlling of machinery and production processes in offline mode </li><li>Support for envrionments that demand highest security standards</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape254").popover({
+        title: "<b>Cumulocity IoT Edge</b>",
+        content: "<ul><li>Edge version of Cumulocity IoT Core (see there for more details) </li><li>Deployment at the Edge for autonomous IoT operation </li><li>Controlling of machinery and production processes in offline mode</li><li>Support for envrionments that demand highest security standards </li><li>Availability as a bundle with Dell EMC hardware</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape295").popover({
+        title: "<b>Integration & Messaging</b>",
+        content: "<ul><li>Common infrastructure for integrating applications and data sources</li><li>Implementation of interoperabilitiy among disparate apps (50+ adaptors)</li><li>Mapping and transforming of data</li><li>Orchestrating business logic, provision of composite services</li><li>Messaging (implementation of advanced integration patterns beyond request-reply, like publish-subscribe or guaranteed delivery)</li><li>Integration security</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape1014").popover({
+        title: "<b>webMethods Integration Server</b>",
+        content: "<ul><li>Common infrastructure for integrating applications and data sources</li><li>Implementation of interoperabilitiy among disparate apps (50+ adaptors)</li><li>Mapping and transforming of data</li><li>Orchestrating business logic, provision of composite services</li><li>Messaging (implementation of advanced integration patterns beyond request-reply, like publish-subscribe or guaranteed delivery)</li><li>Integration security</li><b>Universal Messaging:</b><ul><li>Market-leading Messaging solution, fastest unified messaging product on the market</li><li>High-throughput, low-latency messaging for resilient, secure and highly scalable applications</li><li>Unsurpassed connectivity, high performance and low-latency delivery</li><li>In-memory data streaming providing the data transport backbone for IoT infrastructures</li><li>Guaranteed message delivery using transactional semantics and persistence</li><li>Highest availability with Universal Messaging’s unique active-active clustering for distributed servers</li></ul></li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+ 
+	    $("#shape1061").popover({
+        title: "<b>Embedded Integration</b>",
+        content: "<ul><li>Product to deliver integrations as Microservices</li><li>Leverage all advantages of Microservice Architectures for integrations: resilient, elastic, platform-agnostic</li><li>Scale microservices with industry-standard tools like Kubernetes(c), RedHat OpenShift and others</li><li>Communicate via lightweight messaging with Software AG's Universal Messaging</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+ 
+	    $("#shape1118").popover({
+        title: "<b>webMethods Microservices Runtime</b>",
+        content: "<ul><li>Product to deliver integrations as Microservices</li><li>Leverage all advantages of Microservice Architectures for integrations: resilient, elastic, platform-agnostic</li><li>Scale microservices with industry-standard tools like Kubernetes(c), RedHat OpenShift and others</li><li>Communicate via lightweight messaging with Software AG's Universal Messaging</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+		
+	
+	    $("#shape299").popover({
+        title: "<b>Managed File Transfer</b>",
+        content: "<ul><li>Secure and reliable file transfer</li><li>Centralized management and monitoring, meeting regulatory requirements</li><li>Scheduled and event-driven transfers</li><li>Transfer security including encryption</li><li>Handling of very large files, compression</li><li>Multi-protocol support (HTTP(s), FTP(s), SFTP, SCP, webDAV)</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+		
+	    $("#shape1018").popover({
+        title: "<b>webMethods Active Transfer</b>",
+        content: "<ul><li>Secure and reliable file transfer</li><li>Centralized management and monitoring, meeting regulatory requirements</li><li>Scheduled and event-driven transfers</li><li>Transfer security including encryption</li><li>Handling of very large files, compression</li><li>Multi-protocol support (HTTP(s), FTP(s), SFTP, SCP, webDAV)</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape290").popover({
+        title: "<b>Streaming Analytics</b>",
+        content: "<ul><li>Analysis of event streams and high-velocity data of any kind in real time</li><li>Detection of patterns, e.g. a change in credit card spending that might be indicative of fraud</li><li>Responding to events and patterns when they happen or even before they happen (if predictive models are associated)</li><li>Visualization of data in business dashboards</li><li>Triggering of actions in other business applications</li><li>Enrichment of event data with historical data</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape49").popover({
+        title: "<b>Apama for Cumulocity IoT</b>",
+        content: "<ul><li>Analysis of event streams and high-velocity data of any kind in real time</li><li>Detection of patterns, e.g. a change in credit card spending that might be indicative of fraud</li><li>Responding to events and patterns when they happen or even before they happen (if predictive models are associated)</li><li>Visualization of data in business dashboards</li><li>Triggering of actions in other business applications</li><li>Enrichment of event data with historical data</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape291").popover({
+        title: "<b>Predictive Analytics</b>",
+        content: "<ul><li>Rapid operational deployment of AI / machine learning</li><li>Execution of machine learning models for batch and real-time transactions</li><li>Maximum flexibility in choice of data mining tools, supporting PMML</li><li>Provisioning of operational AI capabilities for Streaming Analytics</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape54").popover({
+        title: "<b>Cumulocity IoT Predictive Analytics</b>",
+        content: "<ul><li>Rapid operational deployment of AI / machine learning</li><li>Execution of machine learning models for batch and real-time transactions</li><li>Maximum flexibility in choice of data mining tools, supporting PMML</li><li>Provisioning of operational AI capabilities for Streaming Analytics</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape289").popover({
+        title: "<b>IoT Analytical Store and Query</b>",
+        content: "<ul><li>Offloading of data to a dedicated analytical data store (data lake)</li><li>Scalable SQL querying of long-term IoT data</li><li>Standard interfaces to Business Intelligence and analytics tools</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+		
+	    $("#shape55").popover({
+        title: "<b>Cumulocity IoT Data Hub</b>",
+        content: "<ul><li>Offloading of data to a dedicated analytical data store (data lake)</li><li>Scalable SQL querying of long-term IoT data</li><li>Standard interfaces to Business Intelligence and analytics tools</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape292").popover({
+        title: "<b>Streaming Analytics (On-Premise and Edge)</b>",
+        content: "<ul><li>Edge version of Streaming Analytics (see there for more details) </li><li>Deployment at the Edge for autonomous operation </li><li>Controlling of machinery and production processes in offline mode</li><li>Support for environments that demand highest security standards </li><li>Availability as a bundle with Dell EMC(TM) hardware</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape38").popover({
+        title: "<b>Apama for Cumulocity IoT Edge</b>",
+        content: "<ul><li>Edge version of Streaming Analytics (see there for more details) </li><li>Deployment at the Edge for autonomous operation </li><li>Controlling of machinery and production processes in offline mode</li><li>Support for environments that demand highest security standards </li><li>Availability as a bundle with Dell EMC(TM) hardware</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+		
+	    $("#shape286").popover({
+        title: "<b>Self-Service Industrial Analytics</b>",
+        content: "<ul><li>Easy-to-use interface for self-service analytics by non-technical experts</li><li>Analysis of problems, finding root causes through pattern recognition</li><li>Sophisticated detection of system anomalies in relation to or before a problem event</li><li>Monitoring of asset behaviour in relation to their maintenance data, quality deviation detection</li><li>Prediction of inefficiencies and problems as well as maintenance need, efficiency optimization</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape6").popover({
+        title: "<b>TrendMiner</b>",
+        content: "<ul><li>Easy-to-use interface for self-service analytics by non-technical experts</li><li>Analysis of problems, finding root causes through pattern recognition</li><li>Sophisticated detection of system anomalies in relation to or before a problem event</li><li>Monitoring of asset behaviour in relation to their maintenance data, quality deviation detection</li><li>Prediction of inefficiencies and problems as well as maintenance need, efficiency optimization</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+		<!--- TODO --->
+		
+	    $("#shape1111").popover({
+        title: "<b>Application Enablement</b>",
+        content: "<ul><li>Application Enablement</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+		<!--- TODO --->
+	    $("#shape1122").popover({
+        title: "<b>Cumulocity IoT Microservices Hosting</b>",
+        content: "<ul><li>Application Enablement</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+		
+	
+	
+
+	    $("#shape293").popover({
+        title: "<b>Low-Code Application Development (SaaS)</b>",
+        content: "<ul><li>Highly efficient App implementation with visual UI builder </li><li>Dyamic business orchestration with the capability to change processes on the fly</li><li>Business rules management with the capability to change rules on the fly </li><li>Business Dashboards for closed loop analytics </li><li>Integration of any kind of unstructured content like forms and papers</li><li>Identity and Access management</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape56").popover({
+        title: "<b>webMethods AgileApps (SaaS)</b>",
+        content: "<ul><li>Highly efficient App implementation with visual UI builder </li><li>Dyamic business orchestration with the capability to change processes on the fly</li><li>Business rules management with the capability to change rules on the fly </li><li>Business Dashboards for closed loop analytics </li><li>Integration of any kind of unstructured content like forms and papers</li><li>Identity and Access management</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape294").popover({
+        title: "<b>Low-Code Application Development</b>",
+        content: "<ul><li>Highly efficient App implementation with visual UI builder </li><li>Dyamic business orchestration with the capability to change processes on the fly</li><li>Business rules management with the capability to change rules on the fly </li><li>Business Dashboards for closed loop analytics </li><li>Integration of any kind of unstructured content like forms and papers</li><li>Identity and Access management</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape82").popover({
+        title: "<b>webMethods AgileApps</b>",
+        content: "<ul><li>Highly efficient App implementation with visual UI builder </li><li>Dyamic business orchestration with the capability to change processes on the fly</li><li>Business rules management with the capability to change rules on the fly </li><li>Business Dashboards for closed loop analytics </li><li>Integration of any kind of unstructured content like forms and papers</li><li>Identity and Access management</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape285").popover({
+        title: "<b>B2B Integration Platform as a Service</b>",
+        content: "<ul><li>B2B document creation, parsing & validation with out-of-the-box support for EDI X12 4010 and 5010 document types</li><li>Reusable document processing rules</li><li>Tracking and and managing B2B transactions, operational end-to-end visibility</li><li>Profile management for partners (contact details, processing and routing information)</li><li>Security for inbound and outbound channels through certificates, automatic encryption/ decryption</li><li>Message repair and resubmit</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+
+	
+	    $("#shape89").popover({
+        title: "<b>webMethods.io B2B</b>",
+        content: "<ul><li>B2B document creation, parsing & validation with out-of-the-box support for EDI X12 4010 and 5010 document types</li><li>Reusable document processing rules</li><li>Tracking and and managing B2B transactions, operational end-to-end visibility</li><li>Profile management for partners (contact details, processing and routing information)</li><li>Security for inbound and outbound channels through certificates, automatic encryption/ decryption</li><li>Message repair and resubmit</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });		
+	
+	
+	
+	    $("#shape287").popover({
+        title: "<b>Integration Platform as a Service</b>",
+        content: "<ul><li>Extensive set of SaaS connectors, plus standard protocols REST, SOAP, and Odata</li><li>Easy-to-use interface also suitable for citizen developers (browser based, integration wizard, drag-and-drop  ...)</li><li>Sophisticated orchestration (integrating services to complex ones, automating workflows)</li><li>Data mapping, format transformation</li><li>Connectivity to on-premise apps via wM Integration Server ('hybrid integration')</li><li>Execution envrionment for integrations implemented with wM Integration Server on-premise ('deploy to cloud')</li><li>End-to-end monitoring</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape88").popover({
+        title: "<b>webMethods.io Integration</b>",
+        content: "<ul><li>Extensive set of SaaS connectors, plus standard protocols REST, SOAP, and Odata</li><li>Easy-to-use interface also suitable for citizen developers (browser based, integration wizard, drag-and-drop ...)</li><li>Sophisticated orchestration (integrating services to complex ones, automating workflows)</li><li>Data mapping, format transformation</li><li>Connectivity to on-premise apps via wM Integration Server ('hybrid integration')</li><li>Execution envrionment for integrations implemented with wM Integration Server on-premise ('deploy to cloud')</li><li>End-to-end monitoring</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	<!--- TODO --->
+		
+	    $("#shape1072").popover({
+        title: "<b>B2B Integration</b>",
+        content: "<ul><li>SaaS version of the on-premise API Portal (more details see there)</li><li>Cost-effective storefront for APIs</li><li>Integrates with both on-prem and SaaS API Gateways</li><li>Customizable user interface to provide corporate identity</li></ul>",
+		html: true,
+        placement: "bottom",
+        container: "body",
+		trigger: "hover"
+    });	
+	<!--- TODO --->
+	    $("#shape1121").popover({
+        title: "<b>webMethods Trading Networks</b>",
+        content: "<ul><li>SaaS version of the on-premise API Portal (more details see there)</li><li>Cost-effective storefront for APIs</li><li>Integrates with both on-prem and SaaS API Gateways</li><li>Customizable user interface to provide corporate identity</li></ul>",
+		html: true,
+        placement: "bottom",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+	
+	    $("#shape1038").popover({
+        title: "<b>API Portal (SaaS)</b>",
+        content: "<ul><li>SaaS version of the on-premise API Portal (more details see there)</li><li>Cost-effective storefront for APIs</li><li>Integrates with both on-prem and SaaS API Gateways</li><li>Customizable user interface to provide corporate identity</li></ul>",
+		html: true,
+        placement: "bottom",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape1124").popover({
+        title: "<b>webMethods.io API (Portal)</b>",
+        content: "<ul><li>SaaS version of the on-premise API Portal (more details see there)</li><li>Cost-effective storefront for APIs</li><li>Integrates with both on-prem and SaaS API Gateways</li><li>Customizable user interface to provide corporate identity</li></ul>",
+		html: true,
+        placement: "bottom",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+
+	
+	    $("#shape1037").popover({
+        title: "<b>API Gateway (SaaS)</b>",
+        content: "<ul><li>API Gateway as a Software as a Service solution </li><li>Nearly identical feature set and user interface to the on-prem version </li><li>Support for architectures implementing the 'Keep Gateway close to provider!' paradigm</li></ul>",
+		html: true,
+        placement: "bottom",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape1125").popover({
+        title: "<b>webMethods.io API (Gateway)</b>",
+        content: "<ul><li>API Gateway as a Software as a Service solution </li><li>Nearly identical feature set and user interface to the on-prem version </li><li>Support for architectures implementing the 'Keep Gateway close to provider!' paradigm</li></ul>",
+		html: true,
+        placement: "bottom",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+
+		
+	    $("#shape1033").popover({
+        title: "<b>API Portal</b>",
+        content: "<ul><li>API storefront for promotion of REST, SOAP, and Odata APIs</li><li>Envrionment for (third-party) API consumers to discover, test, and subscribe to APIs</li><li>API presentation (gallery) and human-readable documentation</li><li>Management of API access by consumers</li><li>Analytics for both API Portal providers and API consumers</li><li>API collaboration / communities, deepening the understanding of how consumers use APIs</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	    $("#shape1120").popover({
+        title: "<b>webMethods API Portal</b>",
+        content: "<ul><li>API storefront for promotion of REST, SOAP, and Odata APIs</li><li>Envrionment for (third-party) API consumers to discover, test, and subscribe to APIs</li><li>API presentation (gallery) and human-readable documentation</li><li>Management of API access by consumers</li><li>Analytics for both API Portal providers and API consumers</li><li>API collaboration / communities, deepening the understanding of how consumers use APIs</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	
+	
+
+	    $("#shape1032").popover({
+        title: "<b>API Gateway</b>",
+        content: "<ul><li>Policy-driven exposure of APIs to external parties</li><li>Identification and access management, encryption</li><li>Mediation and transformation</li><li>Definition and enforcement of SLAs</li><li>Traffic management (routing, throttling, ...) </li><li>Threat protection</li><li>API monitoring and analytics</li><li>API development portal (interactive console, developer sandbox, API mocking, …)</li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+	<!-- !!! TODO  -->
+	    $("#shape1119").popover({
+        title: "<b>webMethods API Gateway</b>",
+        content: "<ul><li><b>API Gateway</b><ul><li>Policy-driven exposure of APIs to external parties</li><li>Identification and access management, encryption</li><li>Mediation and transformation</li><li>Definition and enforcement of SLAs</li><li>Traffic management (routing, throttling, ...) </li><li>Threat protection</li><li>API monitoring and analytics</li><li>API development portal (interactive console, developer sandbox, API mocking, …)</li></ul>		</li><li><b>API Portal</b> <ul><li>API storefront for promotion of REST, SOAP, and Odata APIs</li><li>Envrionment for (third-party) API consumers to discover, test, and subscribe to APIs</li><li>API presentation (gallery) and human-readable documentation</li><li>Management of API access by consumers</li><li>Analytics for both API Portal providers and API consumers</li><li>API collaboration / communities, deepening the understanding of how consumers use APIs</li></ul></li></ul>",
+		html: true,
+        placement: "right",
+        container: "body",
+		trigger: "hover"
+    });	
+
+		
+	});
+		<!-- end insertion popups -->	
+
+		});
+    </script>
+    <script src="vp/vp-script-1.2.10.min.js"></script>
+    
+</head>
+<body>
+    
+    
+    
+    
+    
+    <div id="diagram-sidebar" style="display: none; position: absolute">
+    <div style="height: 100%; width: 100%; padding: 1em">
+        
+        
+
+        <div id="shape-pages" class="panel panel-default" style="display: none">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <svg class="icon-sidebar">
+                        <symbol id="icon-page" viewBox="0 0 32 32">
+                            <path d="M28.232 6.232l-4.465-4.464c-0.972-0.972-2.893-1.768-4.268-1.768h-15c-1.375 0-2.5 1.125-2.5 2.5v27c0 1.375 1.125 2.5 2.5 2.5h23c1.375 0 2.5-1.125 2.5-2.5v-19c0-1.375-0.796-3.296-1.768-4.268zM26.818 7.646c0.098 0.098 0.195 0.218 0.29 0.354h-5.108v-5.108c0.136 0.095 0.256 0.192 0.354 0.29l4.465 4.464zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5h15c0.151 0 0.32 0.019 0.5 0.053v7.947h7.947c0.034 0.18 0.053 0.349 0.053 0.5v19z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-page"></use>
+                    </svg>&nbsp;
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapsePages">Pages</a>
+                </h4>
+            </div>
+            <div id="collapsePages" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    
+                    <div id="panel-pages"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="shape-layers" class="panel panel-default" style="display: none">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <svg class="icon-sidebar">
+                        <symbol id="icon-layer" viewBox="0 0 32 32">
+                            <path d="M28.232 6.232l-4.465-4.464c-0.972-0.972-2.893-1.768-4.268-1.768h-15c-1.375 0-2.5 1.125-2.5 2.5v27c0 1.375 1.125 2.5 2.5 2.5h23c1.375 0 2.5-1.125 2.5-2.5v-19c0-1.375-0.796-3.296-1.768-4.268zM26.818 7.646c0.098 0.098 0.195 0.218 0.29 0.354h-5.108v-5.108c0.136 0.095 0.256 0.192 0.354 0.29l4.465 4.464zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5h15c0.151 0 0.32 0.019 0.5 0.053v7.947h7.947c0.034 0.18 0.053 0.349 0.053 0.5v19z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-layer"></use>
+                    </svg>&nbsp;
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseLayers">Layers</a>
+                </h4>
+            </div>
+            <div id="collapseLayers" class="panel-collapse collapse in">
+                <div id="panel-layers" class="panel-body">
+                </div>
+            </div>
+        </div>
+        
+        <div id="shape-links" class="panel panel-default" style="display: none">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <svg class="icon-sidebar">
+                        <symbol id="icon-chain" viewBox="0 0 26 28">
+                            <path d="M22.75 19c0-0.406-0.156-0.781-0.438-1.062l-3.25-3.25c-0.281-0.281-0.672-0.438-1.062-0.438-0.453 0-0.812 0.172-1.125 0.5 0.516 0.516 1.125 0.953 1.125 1.75 0 0.828-0.672 1.5-1.5 1.5-0.797 0-1.234-0.609-1.75-1.125-0.328 0.313-0.516 0.672-0.516 1.141 0 0.391 0.156 0.781 0.438 1.062l3.219 3.234c0.281 0.281 0.672 0.422 1.062 0.422s0.781-0.141 1.062-0.406l2.297-2.281c0.281-0.281 0.438-0.656 0.438-1.047zM11.766 7.984c0-0.391-0.156-0.781-0.438-1.062l-3.219-3.234c-0.281-0.281-0.672-0.438-1.062-0.438s-0.781 0.156-1.062 0.422l-2.297 2.281c-0.281 0.281-0.438 0.656-0.438 1.047 0 0.406 0.156 0.781 0.438 1.062l3.25 3.25c0.281 0.281 0.672 0.422 1.062 0.422 0.453 0 0.812-0.156 1.125-0.484-0.516-0.516-1.125-0.953-1.125-1.75 0-0.828 0.672-1.5 1.5-1.5 0.797 0 1.234 0.609 1.75 1.125 0.328-0.313 0.516-0.672 0.516-1.141zM25.75 19c0 1.188-0.484 2.344-1.328 3.172l-2.297 2.281c-0.844 0.844-1.984 1.297-3.172 1.297-1.203 0-2.344-0.469-3.187-1.328l-3.219-3.234c-0.844-0.844-1.297-1.984-1.297-3.172 0-1.234 0.5-2.406 1.375-3.266l-1.375-1.375c-0.859 0.875-2.016 1.375-3.25 1.375-1.188 0-2.344-0.469-3.187-1.313l-3.25-3.25c-0.859-0.859-1.313-1.984-1.313-3.187 0-1.188 0.484-2.344 1.328-3.172l2.297-2.281c0.844-0.844 1.984-1.297 3.172-1.297 1.203 0 2.344 0.469 3.187 1.328l3.219 3.234c0.844 0.844 1.297 1.984 1.297 3.172 0 1.234-0.5 2.406-1.375 3.266l1.375 1.375c0.859-0.875 2.016-1.375 3.25-1.375 1.188 0 2.344 0.469 3.187 1.313l3.25 3.25c0.859 0.859 1.313 1.984 1.313 3.187z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-chain"></use>
+                    </svg>&nbsp;
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseLinks">Shape Links</a>
+                </h4>
+            </div>
+            <div id="collapseLinks" class="panel-collapse collapse in">
+                <div id="panel-links" class="panel-body">
+                </div>
+            </div>
+        </div>
+        
+        <div id="shape-props" class="panel panel-default" style="display: none">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <svg class="icon-sidebar">
+                        <symbol id="icon-list-ul" viewBox="0 0 28 28">
+                            <path d="M6 22c0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3 3 1.344 3 3zM6 14c0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3 3 1.344 3 3zM28 20.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5zM6 6c0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3 3 1.344 3 3zM28 12.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5zM28 4.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-list-ul"></use>
+                    </svg>&nbsp;
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseProps">Shape Properties</a>
+                </h4>
+            </div>
+            <div id="collapseProps" class="panel-collapse collapse in">
+                <div id="panel-props" class="panel-body">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="sidebar-toggle" style="display: none">
+        <svg class="icon-sidebar">
+            <symbol id="icon-bars" viewBox="0 0 24 28">
+                <path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"></path>
+            </symbol>
+            <use xlink:href="#icon-bars"></use>
+        </svg>
+    </div>
+    <div id="svg" class="svg appear">
+        <svg width="100%" height="100%" xml:space="preserve" color-interpolation-filters="sRGB" class="st17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+	
+
+	<style type="text/css">
+	.st1 {fill:#ccd2d6;stroke:none;stroke-width:0.25;}
+	.st2 {fill:#58656d;font-family:Roboto;font-size:0.75em;font-weight:bold;}
+	.st3 {font-size:1em;}
+	.st4 {fill:#00b050;stroke:#c7c8c8;stroke-width:0.25;}
+	.st5 {fill:#000000;font-family:Roboto;font-size:0.75em;font-weight:bold;}
+	.st6 {fill:#ccd2d6;stroke:#ffffff;stroke-width:1.5;}
+	.st7 {fill:none;}
+	.st8 {stroke:#ff4200;stroke-dasharray:0.01,3.75;stroke-width:1.25;}
+	.st9 {fill:#ff4200;font-family:Roboto;font-size:0.75em;font-weight:bold;}
+	.st10 {stroke:#006f97;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;}
+	.st11 {visibility:visible;}
+	.st12 {fill:#58656d;fill-opacity:0.7;filter:url(#filter_0.66666668653488);stroke:#58656d;stroke-opacity:0.7;}
+	.st13 {fill:#ffffff;stroke:#58656d;stroke-width:0.75;}
+	.st14 {fill:#ffffff;stroke:#006f97;stroke-width:0.75;}
+	.st15 {fill:#006f97;font-family:Roboto;font-size:0.75em;font-weight:bold;}
+	.st16 {font-size:0.833344em;}
+	.st17 {fill:none;fill-rule:evenodd;font-size:12px;overflow:hidden;stroke-linecap:square;stroke-miterlimit:3;}
+</style>
+
+	<defs id="Filters">
+		<filter id="filter_0.66666668653488">
+			<feGaussianBlur stdDeviation="0.66666668653488" />
+		</filter>
+	</defs>
+	<g id="viewport">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<g id="shape28" transform="translate(728.817,-5.66929)" class="Dark Grey Box">
+			
+			<desc>CUSTOMERS, PARTNERS, SUPPLIERS</desc>
+			
+			
+			
+			<rect x="0" y="39.7941" width="97.285" height="433.592" class="st1" />
+			<text x="20.87" y="51.89" class="st2">CUSTOMERS, <tspan x="24.61" dy="1.2em" class="st3">PARTNERS,</tspan><tspan x="25.19" dy="1.2em" class="st3">SUPPLIERS</tspan></text>		</g>
+		<g id="shape306" transform="translate(728.097,-442.205)">
+			
+			<desc>Toggle Capability View /Product View</desc>
+			
+			
+			<rect x="0" y="444.038" width="97.285" height="29.3479" class="st4" />
+			<text x="13.24" y="456.01" class="st5">T<tspan class="st3">oggle Capability </tspan><tspan x="8.96" dy="1.2em" class="st3">View /Product View</tspan></text>		</g>
+		<g id="shape263" transform="translate(125.449,-400.388)">
+			
+			<desc>MEDIATION AND PUBLISHING</desc>
+			
+			
+			<rect x="0" y="434.73" width="598.11" height="38.6562" class="st6" />
+			<text x="4" y="455.89" class="st2">MEDIATION <tspan x="4" dy="1.2em" class="st3">AND PUBLISHING</tspan></text>		</g>
+		<g id="shape264" transform="translate(222.818,-400.388)">
+			
+			<desc>CONNECTIVITY AND INTEGRATION</desc>
+			
+			
+			<rect x="0" y="443.353" width="390.883" height="30.0325" class="st6" />
+			<text x="4" y="455.89" class="st2">CONNECTIVITY<tspan x="4" dy="1.2em" class="st3">AND INTEGRATION</tspan></text>		</g>
+		<g id="shape265" transform="translate(323.016,-400.388)">
+			
+			<desc>ANALYTICS</desc>
+			
+			
+			<rect x="0" y="450.709" width="90.7087" height="22.6772" class="st6" />
+			<text x="4" y="464.75" class="st2">ANALYTICS</text>		</g>
+		<g id="shape266" transform="translate(422.602,-400.388)">
+			
+			<desc>SERVING</desc>
+			
+			
+			<rect x="0" y="450.709" width="90.7087" height="22.6772" class="st6" />
+			<text x="4" y="464.75" class="st2">SERVING</text>		</g>
+		<g id="shape16" transform="translate(23.3197,-161.575)" class="Dark Grey Box">
+			
+			<desc>THINGS</desc>
+			
+			
+			
+			<rect x="0" y="195.7" width="97.2852" height="277.686" class="st1" />
+			<text x="32.36" y="207.8" class="st2">THINGS</text>		</g>
+		<g id="shape32" transform="translate(23.3197,-6.41525)" class="Dark Grey Box">
+			
+			<desc>ON-PREMISE / PRIVATE CLOUD</desc>
+			
+			
+			
+			<rect x="0" y="323.896" width="97.2852" height="149.49" class="st1" />
+			<text x="18.96" y="336" class="st2">ON-PREMISE / <tspan x="14.78" dy="1.2em" class="st3">PRIVATE CLOUD</tspan></text>		</g>
+		<g id="shape275" transform="translate(126.833,-18)">
+			
+			<g id="shape272-33" transform="translate(0,-233.539)">
+				
+				<desc>SOFTWARE AS A SERVICE</desc>
+				
+				
+				
+				<path d="M0 473.39 L595.28 473.39 L595.28 326.42 L0 326.42 L0 473.39 Z" class="st7" />
+				<path d="M0 326.42 L595.28 326.42" class="st8" />
+				<text x="4" y="338.52" class="st9">SOFTWARE <tspan x="4" dy="1.2em" class="st3">AS A SERVICE</tspan></text>			</g>
+			<g id="shape273-38" transform="translate(-1.38447,-144.573)">
+				
+				<desc>ON-PREMISE &amp; EDGE DEPLOYMENT</desc>
+				
+				
+				
+				<path d="M0 473.39 L598.11 473.39 L598.11 378.01 L0 378.01 L0 473.39 Z" class="st7" />
+				<path d="M0 378.01 L598.11 378.01" class="st8" />
+				<text x="4" y="390.11" class="st9">ON-PREMISE &amp;<tspan x="4" dy="1.2em" class="st3">EDGE DEPLOYMENT</tspan></text>			</g>
+		</g>
+		<g id="shape1078" transform="translate(738.608,918.425) rotate(180)">
+			
+			<path d="M0 473.39 L430.36 473.39" class="st10" />
+		</g>
+		<g id="shape1054" transform="translate(230.334,-73.7008)">
+			
+			
+		</g>
+		<g id="shape80" transform="translate(230.334,918.425) rotate(180)">
+			
+			<path d="M0 473.39 L118.46 473.39" class="st10" />
+		</g>
+		<g id="shape1095" transform="translate(315.335,-79.3701)" class="Dynamic connector">
+			
+			<path d="M-7.09 473.39 L-0.69 473.39 L-0.69 518.74 L-7.09 518.74" class="st10" />
+		</g>
+		<g id="shape95" transform="translate(506.674,-351.496) rotate(2.96552E-05)">
+			
+			<path d="M0 473.39 L21.3 473.39" class="st10" />
+		</g>
+		<g id="shape111" transform="translate(605.886,-379.843) rotate(5.15015E-06)">
+			
+			<path d="M0 473.39 L132.53 473.39" class="st10" />
+		</g>
+		<g id="shape215" transform="translate(240.945,640.63) rotate(180)">
+			
+			<path d="M0 473.39 L141.73 473.39" class="st10" />
+		</g>
+		<g id="shape216" transform="translate(605.886,-323.15)">
+			
+			<path d="M0 473.39 L21.3 473.39" class="st10" />
+		</g>
+		<g id="shape39" transform="translate(329.59,723.51) rotate(180)">
+			
+			<path d="M0 473.39 L21.34 473.39" class="st10" />
+		</g>
+		<g id="shape79" transform="translate(742.677,399.685) rotate(90)">
+			
+			<path d="M0 473.39 L5.67 473.39" class="st10" />
+		</g>
+		<g id="shape93" transform="translate(428.759,805.039) rotate(180)">
+			
+			<path d="M0 473.39 L120.51 473.39" class="st10" />
+		</g>
+		<g id="shape225" transform="translate(742.633,296.74) rotate(89.8914)">
+			
+			<path d="M0 473.39 L22.68 473.39" class="st10" />
+		</g>
+		<g id="shape249" transform="translate(110.876,-113.386)">
+			
+			<path d="M0 473.39 L119.46 473.39" class="st10" />
+		</g>
+		<g id="shape250" transform="translate(230.334,737.008) rotate(180)">
+			
+			<path d="M0 473.39 L131.12 473.39" class="st10" />
+		</g>
+		<g id="shape251" transform="translate(742.676,207.827) rotate(90.1086)">
+			
+			<path d="M0 473.39 L22.68 473.39" class="st10" />
+		</g>
+		<g id="shape1004" transform="translate(111.844,-49.6063)" class="Dynamic connector">
+			
+			<path d="M0 466.3 L19.28 466.3" class="st10" />
+		</g>
+		<g id="shape1010" transform="translate(329.547,668.976) rotate(180)">
+			
+			<path d="M0 473.39 L31.91 473.39" class="st10" />
+		</g>
+		<g id="shape1025" transform="translate(329.547,612.283) rotate(180)">
+			
+			<path d="M0 473.39 L23.41 473.39" class="st10" />
+		</g>
+		<g id="shape1059" transform="translate(230.334,861.732) rotate(180)">
+			
+			<path d="M0 473.39 L118.49 473.39" class="st10" />
+		</g>
+		<g id="shape1064" transform="translate(209.035,-49.6063)" class="Dynamic connector">
+			
+			<path d="M0 466.3 L21.3 466.3" class="st10" />
+		</g>
+		<g id="shape1065" transform="translate(740.289,833.386) rotate(180)">
+			
+			<path d="M0 473.39 L35.19 473.39" class="st10" />
+		</g>
+		<g id="shape1066" transform="translate(192.756,348.661) rotate(-90)">
+			
+			<path d="M0 473.39 L5.67 473.39" class="st10" />
+		</g>
+		<g id="shape1079" transform="translate(605.764,-85.0394) rotate(1.15195E-06)">
+			
+			<path d="M0 473.39 L132.65 473.39" class="st10" />
+		</g>
+		<g id="shape1083" transform="translate(737.373,805.039) rotate(180)">
+			
+			<path d="M0 473.39 L32.28 473.39" class="st10" />
+		</g>
+		<g id="shape1100" transform="translate(528.094,861.732) rotate(180)">
+			
+			<path d="M0 473.39 L221.67 473.39" class="st10" />
+		</g>
+		<g id="shape309" transform="translate(-104.882,155.906) rotate(-90)">
+			
+			<path d="M0 473.39 L5.67 473.39" class="st10" />
+		</g>
+		<g id="shape1105" transform="translate(93.5433,110.551) rotate(-90)">
+			
+			<path d="M0 473.39 L5.67 473.39" class="st10" />
+		</g>
+		<g id="shape1106" transform="translate(192.756,138.898) rotate(-90)">
+			
+			<path d="M0 473.39 L5.67 473.39" class="st10" />
+		</g>
+		<g id="shape1109" transform="translate(567.101,-283.465)" class="Dynamic connector">
+			
+			<path d="M0 473.39 L0 632.13 L-258.85 632.13" class="st10" />
+		</g>
+		<g id="shape1110" transform="translate(407.461,-270.709)" class="Dynamic connector">
+			
+			<path d="M0 466.3 L157.28 466.3 A2.3622 2.3622 0 1 1 162 466.3 L330.95 466.3" class="st10" />
+		</g>
+		<g id="shape1112" transform="translate(428.759,595.276) rotate(180)">
+			
+			<path d="M0 473.39 L131.12 473.39" class="st10" />
+		</g>
+		<g id="shape1113" transform="translate(428.759,566.929) rotate(180)">
+			
+			<path d="M0 473.39 L131.12 473.39" class="st10" />
+		</g>
+		<g id="shape1114" transform="translate(331.812,751.851) rotate(179.726)">
+			
+			<path d="M0 473.39 L21.3 473.39" class="st10" />
+		</g>
+		<g id="shape237" transform="translate(407.461,-187.829)" class="Dynamic connector">
+			
+			<path d="M0 466.3 L157.28 466.3 A2.3622 2.3622 0 1 1 162 466.3 L330.95 466.3" class="st10" />
+		</g>
+		<g id="shape1130" transform="translate(705.098,-318.898)" class="Dynamic connector">
+			
+			<path d="M0 474.8 L10.63 474.8 L10.63 486.14 L33.32 486.14" class="st10" />
+		</g>
+		<g id="shape1133" transform="translate(705.099,-351.496) rotate(3.64465E-05)">
+			
+			<path d="M0 473.39 L34.22 473.39" class="st10" />
+		</g>
+		<g id="shape1135" transform="translate(627.185,833.386) rotate(180)">
+			
+			<path d="M0 473.39 L318.94 473.39" class="st10" />
+		</g>
+		<g id="shape1136" transform="translate(705.098,-324.162)" class="Dynamic connector">
+			
+			<path d="M0 469.54 L10.63 469.54 L10.63 463.06 L33.32 463.06" class="st10" />
+		</g>
+		<g id="shape11" transform="translate(33.0483,-168.661)" class="SAG Rectangle Grey">
+			
+			<desc>Assets / Devices / Gateways</desc>
+			
+			
+			
+			<g id="shadow11-156" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="291.969" width="77.8282" height="181.417" class="st12" />
+			</g>
+			<rect x="0" y="291.969" width="77.8282" height="181.417" class="st13" />
+			<text x="22.19" y="374.58" class="st2">Assets / <tspan x="20.2" dy="1.2em" class="st3">Devices / </tspan><tspan x="19.19" dy="1.2em" class="st3">Gateways</tspan></text>		</g>
+		<g id="shape69" transform="translate(33.0483,-102.047)" class="SAG Rectangle Grey">
+			
+			<desc>Applications</desc>
+			
+			
+			
+			<g id="shadow69-164" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st13" />
+			<text x="13.58" y="464.75" class="st2">Applications</text>		</g>
+		<g id="shape1057" transform="translate(34.0157,-45.3543)" class="SAG Rectangle Grey">
+			
+			<desc>Microservices</desc>
+			
+			
+			
+			<g id="shadow1057-170" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st13" />
+			<text x="10.3" y="464.75" class="st2">Microservices</text>		</g>
+		<g id="shape1058" transform="translate(34.0157,-73.7008)" class="SAG Rectangle Grey">
+			
+			<desc>Mainframe &amp; Legacy</desc>
+			
+			
+			
+			<g id="shadow1058-176" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st13" />
+			<text x="12.78" y="459.35" class="st2">Mainframe &amp; <tspan x="24.46" dy="1.2em" class="st3">Legacy</tspan></text>		</g>
+		<g id="shape34" transform="translate(738.416,-183.577)" class="Data Source">
+			
+			
+			<desc>Historians</desc>
+			<g id="shape35-183">
+				
+				
+				<g id="shadow35-184" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+					<path d="M0 471.12 A38.948 2.26772 -180 0 0 77.9 471.12 L77.9 452.98 L0 452.98 L0 471.12 Z" class="st12" />
+				</g>
+				<path d="M0 471.12 A38.948 2.26772 -180 0 0 77.9 471.12 L77.9 452.98 L0 452.98 L0 471.12 Z" class="st13" />
+			</g>
+			<g id="shape34-188">
+				
+				
+				<g id="shadow34-189" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+					<ellipse cx="38.948" cy="452.976" rx="38.948" ry="2.26772" class="st12" />
+				</g>
+				<ellipse cx="38.948" cy="452.976" rx="38.948" ry="2.26772" class="st13" />
+				<text x="18.12" y="465.75" class="st2">Historians</text>			</g>
+		</g>
+		<g id="shape102" transform="translate(738.416,-266.457)" class="SAG Rectangle Grey">
+			
+			<desc>BI Tools</desc>
+			
+			
+			
+			<g id="shadow102-195" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st13" />
+			<text x="22.26" y="464.75" class="st2">BI Tools</text>		</g>
+		<g id="shape98" transform="translate(738.416,-294.803)" class="SAG Rectangle Grey">
+			
+			<desc>SaaS / DBaaS</desc>
+			
+			
+			
+			<g id="shadow98-201" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st13" />
+			<text x="11.28" y="464.75" class="st2">SaaS / DBaaS</text>		</g>
+		<g id="shape1127" transform="translate(738.416,-368.504)" class="SAG Rectangle Grey">
+			
+			<desc>B2B Interfaces</desc>
+			
+			
+			
+			<g id="shadow1127-207" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st13" />
+			<text x="8.96" y="464.75" class="st2">B2B Interfaces</text>		</g>
+		<g id="shape1131" transform="translate(738.416,-73.7008)" class="SAG Rectangle Grey">
+			
+			<desc>B2B Interfaces</desc>
+			
+			
+			
+			<g id="shadow1131-213" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st13" />
+			<text x="8.96" y="464.75" class="st2">B2B Interfaces</text>		</g>
+		<g id="shape1132" transform="translate(738.416,-102.047)" class="SAG Rectangle Grey">
+			
+			<desc>API Consumers</desc>
+			
+			
+			
+			<g id="shadow1132-219" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="422.362" width="77.8961" height="51.0236" class="st12" />
+			</g>
+			<rect x="0" y="422.362" width="77.8961" height="51.0236" class="st13" />
+			<text x="7.46" y="450.57" class="st2">API Consumers</text>		</g>
+		<g id="shape1001" transform="translate(738.416,-323.15)" class="SAG Rectangle Grey">
+			
+			<desc>API Consumers</desc>
+			
+			
+			
+			<g id="shadow1001-225" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="433.701" width="77.8961" height="39.685" class="st12" />
+			</g>
+			<rect x="0" y="433.701" width="77.8961" height="39.685" class="st13" />
+			<text x="7.46" y="456.24" class="st2">API Consumers</text>		</g>
+		<g id="shape1097" transform="translate(738.608,-17.0079)" class="SAG Rectangle Grey">
+			
+			<desc>Files</desc>
+			
+			
+			
+			<g id="shadow1097-231" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st13" />
+			<text x="29.35" y="464.75" class="st2">Files</text>		</g>
+		
+			<g id="shape89" transform="translate(527.972,-368.504)" class="SAG Rectangle">
+				
+				<desc>wM.io B2B</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="26.66" y="459.35" class="st15">wM.io<tspan x="30.63" dy="1.2em" class="st3">B2B</tspan></text>			</g>
+		
+		
+			<g id="shape88" transform="translate(528.187,-283.465)" class="SAG Rectangle">
+				
+				<desc>wM.io Integration</desc>
+				
+				
+				
+				<rect x="0" y="394.016" width="77.8282" height="79.3701" class="st14" />
+				<text x="26.62" y="431" class="st15">wM.io<tspan x="16.73" dy="1.2em" class="st3">Integration</tspan></text>			</g>
+		
+		
+			<g id="shape254" transform="translate(230.334,-175.748)" class="SAG Rectangle">
+				
+				<desc>Cumulocity IoT Edge</desc>
+				
+				
+				
+				<rect x="0" y="405.354" width="77.8282" height="68.0315" class="st14" />
+				<text x="8.22" y="436.67" class="st15">Cumulocity IoT <tspan x="28.85" dy="1.2em" class="st3">Edge</tspan></text>			</g>
+		
+		
+			<g id="shape54" transform="translate(329.547,-294.803)" class="SAG Rectangle">
+				
+				<desc>Cumulocity IoT Predictive Analytics</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="8.26" y="459.35" class="st15">Cumulocity IoT<tspan x="5.31" dy="1.44em" class="st16">Predictive Analytics</tspan></text>			</g>
+		
+		
+			<g id="shape38" transform="translate(329.528,-211.924)" class="SAG Rectangle">
+				
+				<desc>Apama for Cumulocity IoT</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9528" height="22.6772" class="st14" />
+				<text x="17.77" y="459.35" class="st15">Apama for  <tspan x="8.28" dy="1.2em" class="st3">Cumulocity IoT</tspan></text>			</g>
+		
+		
+			<g id="shape56" transform="translate(428.845,-340.157)" class="SAG Rectangle">
+				
+				<desc>wM AgileApps</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="9.76" y="464.75" class="st15">wM AgileApps</text>			</g>
+		
+		
+			<g id="shape82" transform="translate(428.759,-130.394)" class="SAG Rectangle">
+				
+				<desc>wM AgileApps</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="9.76" y="464.75" class="st15">wM AgileApps</text>			</g>
+		
+		
+			<g id="shape1014" transform="translate(230.334,-73.7008)" class="SAG Rectangle">
+				
+				<desc>wM Integration Server with Universal Messaging</desc>
+				
+				
+				
+				<rect x="0" y="394.016" width="77.9142" height="79.3701" class="st14" />
+				<text x="8.4" y="414.8" class="st15">wM Integration <tspan x="25.77" dy="1.2em" class="st3">Server</tspan><tspan x="31.84" dy="1.44em" class="st16">with</tspan><tspan x="20.01" dy="1.2em" class="st3">Universal</tspan><tspan x="16.69" dy="1.2em" class="st3">Messaging</tspan></text>			</g>
+		
+		
+			<g id="shape1018" transform="translate(230.334,-17.0079)" class="SAG Rectangle">
+				
+				<desc>wM Active Transfer</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="17.79" y="459.35" class="st15">wM Active <tspan x="21.6" dy="1.2em" class="st3">Transfer</tspan></text>			</g>
+		
+		
+			<g id="shape47" transform="translate(230.334,-266.457)" class="SAG Rectangle">
+				
+				<desc>Cumulocity IoT Core</desc>
+				
+				
+				
+				<rect x="0" y="348.661" width="77.8282" height="124.724" class="st14" />
+				<text x="8.22" y="408.32" class="st15">Cumulocity IoT <tspan x="29.35" dy="1.2em" class="st3">Core</tspan></text>			</g>
+		
+		
+			<g id="shape49" transform="translate(329.547,-323.15)" class="SAG Rectangle">
+				
+				<desc>Apama for Cumulocity IoT</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="17.76" y="459.35" class="st15">Apama for <tspan x="8.26" dy="1.2em" class="st3">Cumulocity IoT</tspan></text>			</g>
+		
+		
+			<g id="shape55" transform="translate(329.59,-266.457)" class="SAG Rectangle">
+				
+				<desc>Cumulocity IoT Data Hub</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st14" />
+				<text x="8.22" y="459.35" class="st15">Cumulocity IoT    <tspan x="18.05" dy="1.2em" class="st3">  </tspan>Data Hub</text>			</g>
+		
+		
+			<g id="shape6" transform="translate(329.547,-183.577)" class="SAG Rectangle">
+				
+				<desc>TrendMiner</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="15.31" y="464.75" class="st15">TrendMiner</text>			</g>
+		
+		
+			<g id="shape1125" transform="translate(627.165,-311.811)" class="SAG Rectangle">
+				
+				<desc>wM.io API Gateway</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9528" height="22.6772" class="st14" />
+				<text x="18.32" y="459.35" class="st15">wM.io API <tspan x="21.57" dy="1.2em" class="st3">Gateway</tspan></text>			</g>
+		
+		
+			<g id="shape1124" transform="translate(627.099,-340.157)" class="SAG Rectangle">
+				
+				<desc>wM.io API Portal</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9528" height="22.6772" class="st14" />
+				<text x="18.32" y="459.35" class="st15">wM.io API <tspan x="26.76" dy="1.2em" class="st3">Portal</tspan></text>			</g>
+		
+		
+			<g id="shape1118" transform="translate(230.334,-45.3543)" class="SAG Rectangle">
+				
+				<desc>wM Microservices Runtime</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="1.97" y="459.35" class="st15">wM Microservices <tspan x="22.01" dy="1.2em" class="st3">Runtime</tspan></text>			</g>
+		
+		
+			<g id="shape1121" transform="translate(527.972,-73.7008)" class="SAG Rectangle">
+				
+				<desc>wM Trading Networks</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="14.93" y="459.35" class="st15">wM Trading <tspan x="19.62" dy="1.2em" class="st3">Networks</tspan></text>			</g>
+		
+		
+			<g id="shape1115" transform="translate(131.122,-45.3543)" class="SAG Rectangle">
+				
+				<desc>wM Microgateway</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="2.01" y="464.75" class="st15">wM Microgateway</text>			</g>
+		
+		
+			<g id="shape1119" transform="translate(627.185,-102.047)" class="SAG Rectangle">
+				
+				<desc>wM API Gateway</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="31.71" y="459.35" class="st15">wM <tspan x="13.19" dy="1.2em" class="st3">API Gateway</tspan></text>			</g>
+		
+		
+			<g id="shape1120" transform="translate(627.185,-130.394)" class="SAG Rectangle">
+				
+				<desc>wM API Portal</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="31.71" y="459.35" class="st15">wM <tspan x="18.38" dy="1.2em" class="st3">API Portal</tspan></text>			</g>
+		
+		
+			<g id="shape1122" transform="translate(428.845,-368.504)" class="SAG Rectangle">
+				
+				<desc>Cumulocity IoT Microservice Hosting</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="8.26" y="459.35" class="st15">Cumulocity IoT<tspan x="2.91" dy="1.44em" class="st16">Microservice Hosting</tspan></text>			</g>
+		
+		<g id="shape295" transform="translate(230.334,-73.7008)" class="SAG Rectangle">
+			
+			<desc>Integration &amp; Messaging</desc>
+			
+			
+			
+			<rect x="0" y="394.016" width="77.9142" height="79.3701" class="st14" />
+			<text x="12.7" y="431" class="st15">Integration &amp; <tspan x="16.69" dy="1.2em" class="st3">Messaging</tspan></text>		</g>
+		<g id="shape285" transform="translate(527.972,-368.504)" class="SAG Rectangle">
+			
+			<desc>B2B Integration (iPaaS)</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="7.33" y="459.35" class="st15">B2B Integration  <tspan x="24.1" dy="1.2em" class="st3">(iPaaS)</tspan></text>		</g>
+		<g id="shape287" transform="translate(527.972,-283.465)" class="SAG Rectangle">
+			
+			<desc>Integration (IPaaS)</desc>
+			
+			
+			
+			<rect x="0" y="394.016" width="77.9142" height="79.3701" class="st14" />
+			<text x="16.77" y="431" class="st15">Integration<tspan x="23.98" dy="1.2em" class="st3">(IPaaS)</tspan></text>		</g>
+		<g id="shape292" transform="translate(329.59,-211.924)" class="SAG Rectangle">
+			
+			<desc>Streaming Analytics</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.8282" height="22.6772" class="st14" />
+			<text x="17.96" y="459.35" class="st15">Streaming <tspan x="20.13" dy="1.2em" class="st3">Analytics</tspan></text>		</g>
+		<g id="shape294" transform="translate(428.759,-130.394)" class="SAG Rectangle">
+			
+			<desc>Low-Code App Development</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="9.25" y="459.35" class="st15">Low-Code App <tspan x="12.25" dy="1.2em" class="st3">Development</tspan></text>		</g>
+		<g id="shape1037" transform="translate(627.185,-311.811)" class="SAG Rectangle">
+			
+			<desc>API Gateway</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9131" height="22.6772" class="st14" />
+			<text x="13.18" y="464.75" class="st15">API Gateway</text>		</g>
+		<g id="shape1038" transform="translate(627.185,-340.157)" class="SAG Rectangle">
+			
+			<desc>API Portal</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9131" height="22.6772" class="st14" />
+			<text x="18.38" y="464.75" class="st15">API Portal</text>		</g>
+		<g id="shape1061" transform="translate(230.334,-45.3543)" class="SAG Rectangle">
+			
+			<desc>Embedded Integration</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="17.52" y="459.35" class="st15">Embedded <tspan x="16.77" dy="1.2em" class="st3">Integration</tspan></text>		</g>
+		<g id="shape1072" transform="translate(528.094,-73.7008)" class="SAG Rectangle">
+			
+			<desc>B2B Integration</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.6693" height="22.6772" class="st14" />
+			<text x="7.2" y="464.75" class="st15">B2B Integration  </text>		</g>
+		<g id="shape1043" transform="translate(131.122,-45.3543)" class="SAG Rectangle">
+			
+			<desc>Embedded API Gateway</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9131" height="22.6772" class="st14" />
+			<text x="17.52" y="459.35" class="st15">Embedded <tspan x="13.18" dy="1.2em" class="st3">API Gateway</tspan></text>		</g>
+		<g id="shape299" transform="translate(230.334,-17.0079)" class="SAG Rectangle">
+			
+			<desc>Managed File Transfer</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="11.73" y="459.35" class="st15">Managed File <tspan x="21.6" dy="1.2em" class="st3">Transfer</tspan></text>		</g>
+		<g id="shape290" transform="translate(329.547,-323.15)" class="SAG Rectangle">
+			
+			<desc>Streaming Analytics</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="18.01" y="459.35" class="st15">Streaming <tspan x="20.17" dy="1.2em" class="st3">Analytics</tspan></text>		</g>
+		<g id="shape291" transform="translate(329.547,-294.803)" class="SAG Rectangle">
+			
+			<desc>Predictive Analytics</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="18.49" y="459.35" class="st15">Predictive <tspan x="20.17" dy="1.2em" class="st3">Analytics</tspan></text>		</g>
+		<g id="shape289" transform="translate(329.547,-266.457)" class="SAG Rectangle">
+			
+			<desc>IoT Analytical Store &amp; Query</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="11.12" y="459.35" class="st15">IoT Analytical <tspan x="10.9" dy="1.2em" class="st3">Store &amp; Query</tspan></text>		</g>
+		<g id="shape1032" transform="translate(627.185,-102.047)" class="SAG Rectangle">
+			
+			<desc>API Gateway</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9131" height="22.6772" class="st14" />
+			<text x="13.18" y="464.75" class="st15">API Gateway</text>		</g>
+		<g id="shape1033" transform="translate(627.185,-130.394)" class="SAG Rectangle">
+			
+			<desc>API Portal</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9131" height="22.6772" class="st14" />
+			<text x="18.38" y="464.75" class="st15">API Portal</text>		</g>
+		<g id="shape284" transform="translate(230.334,-266.457)" class="SAG Rectangle">
+			
+			<desc>IoT Device &amp; Connectivity Management</desc>
+			
+			
+			
+			<rect x="0" y="348.661" width="77.9142" height="124.724" class="st14" />
+			<text x="13.52" y="402.92" class="st15">IoT Device &amp; <tspan x="13.69" dy="1.2em" class="st3">Connectivity </tspan><tspan x="12.3" dy="1.2em" class="st3">Management </tspan> </text>		</g>
+		<g id="shape293" transform="translate(428.759,-340.157)" class="SAG Rectangle">
+			
+			<desc>Low-Code App Development</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="9.25" y="459.35" class="st15">Low-Code App <tspan x="12.25" dy="1.2em" class="st3">Development</tspan></text>		</g>
+		<g id="shape1111" transform="translate(428.759,-368.504)" class="SAG Rectangle">
+			
+			<desc>Application Enablement</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="15.94" y="459.35" class="st15">Application <tspan x="14.97" dy="1.2em" class="st3">Enablement</tspan></text>		</g>
+		<g id="shape286" transform="translate(329.547,-183.577)" class="SAG Rectangle">
+			
+			<desc>Self-service Industr. Analytics</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+			<text x="14.57" y="459.35" class="st15">Self-service <tspan x="3.38" dy="1.2em" class="st3">Industr. Analytics</tspan></text>		</g>
+		<g id="shape288" transform="translate(230.334,-170.079)" class="SAG Rectangle">
+			
+			<desc>IoT Device &amp; Connectivity Management</desc>
+			
+			
+			
+			<rect x="0" y="394.016" width="77.9142" height="79.3701" class="st14" />
+			<text x="13.52" y="425.6" class="st15">IoT Device &amp;   <tspan x="13.69" dy="1.2em" class="st3">Connectivity </tspan><tspan x="12.3" dy="1.2em" class="st3">Management</tspan></text>		</g>
+		<g id="shape1137" transform="translate(33.9817,-17.0079)" class="SAG Rectangle Grey">
+			
+			<desc>Files</desc>
+			
+			
+			
+			<g id="shadow1137-401" transform="matrix(1,0,0,1,0.707107,0.707107)" class="st11">
+				<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st12" />
+			</g>
+			<rect x="0" y="450.709" width="77.8961" height="22.6772" class="st13" />
+			<text x="29.35" y="464.75" class="st2">Files</text>		</g>
+		
+			<g id="shape1138" transform="translate(627.185,-17.0079)" class="SAG Rectangle">
+				
+				<desc>Active Transfer Gateway</desc>
+				
+				
+				
+				<rect x="0" y="450.709" width="77.9142" height="22.6772" class="st14" />
+				<text x="7.68" y="459.35" class="st15">Active Transfer <tspan x="21.55" dy="1.2em" class="st3">Gateway</tspan></text>			</g>
+		
+		<g id="shape1134" transform="translate(627.185,-17.0079)" class="SAG Rectangle">
+			
+			<desc>File Transfer Gateway</desc>
+			
+			
+			
+			<rect x="0" y="450.709" width="77.9131" height="22.6772" class="st14" />
+			<text x="13.19" y="459.35" class="st15">File Transfer <tspan x="21.55" dy="1.2em" class="st3">Gateway</tspan></text>		</g>
+	</g>
+</svg>
+    </div>
+
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <filter id="hover">
+                <feMorphology result="offset" in="SourceGraphic" operator="dilate" radius="5"></feMorphology>
+                <feColorMatrix result="drop" in="offset" type="matrix" values="1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0.3 0"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="drop" mode="normal"></feBlend>
+            </filter>
+
+            <filter id="select">
+                <feMorphology result="offset" in="SourceGraphic" operator="dilate" radius="5"></feMorphology>
+                <feColorMatrix result="drop" in="offset" type="matrix" values="1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0.9 0"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="drop" mode="normal"></feBlend>
+            </filter>
+            <filter id="hyperlink">
+                <feMorphology result="offset" in="SourceGraphic" operator="dilate" radius="5"></feMorphology>
+                <feColorMatrix result="drop" in="offset" type="matrix" values="0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0.3 0"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="drop" mode="normal"></feBlend>
+            </filter>
+        </defs>
+    </svg>
+   <!-- Insert this script for layer visibility toggling -->    
+<script type="text/javascript">
+    (function (diagram) { $.each(diagram.shapes, function (shapeId, shape) {
+
+    var $shape = $("#" + shapeId);
+    
+    $shape.css("cursor", 'pointer');
+
+    if (!shape.Props || !shape.Props.nets)
+        return;
+    
+    $shape.on('click', function (evt) {
+        evt.stopPropagation();
+        var nets       = shape.Props.nets;
+        var allVisible = true;
+        
+        $.each(nets.split(";"), function(k,v) {
+            var name    = v.trim();
+            if (!diagram.isLayerVisible(name))
+                allVisible = false;
+        });
+        
+        $.each(nets.split(";"), function(k,v) {
+            var name = v.trim();
+            diagram.setLayerVisible(name, !allVisible);
+        });
+    });
+});
+ })(window.svgpublish);
+</script>
+<!-- End script for layer visibility toggling -->  
+    
+</body>
+</html>
