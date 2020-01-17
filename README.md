@@ -1,40 +1,59 @@
-## Welcome to GitHub Pages
+# Software AG Reference architecture 
 
-You can use the [editor on GitHub](https://github.com/bhilchenbach/sagtest.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Capability Architecture 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+###  Overview 
 
-### Markdown
+We have chosen a “boxes and connectors” style1 for the visual representation of the reference architecture with boxes representing capabilities (or products in the product view) and connectors signifying data (information) flow between the respective elements. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The following diagram depicts the capability view of the SAG reference architecture or (short) capability architecture. 
 
-```markdown
-Syntax highlighted code block
+![Software AG Reference Archiecture Capability View](/images/Software_AG_Reference_Architecture_10_Capability_View.png)
+#### Figure 1.  Reference Architecture — Capability View. 
 
-# Header 1
-## Header 2
-### Header 3
+### Capabilities 
 
-- Bulleted
-- List
+Capabilities from SAG are shown as light-blue boxes in the large middle section of the architecture diagram, surrounded by non-SAG components.  
 
-1. Numbered
-2. List
+The left side depicts ‘in-house’ components SAG customers currently own or operate, being installed either on-premise, in a private cloud, or on the edge. One also finds ‘Internet of Things’ (IoT) assets there, including devices and gateways (which then connect to the devices).  
 
-**Bold** and _Italic_ and `Code` text
+The right side shows external parties a business typically interacts with, in particular customers, suppliers, and partners (including government and other official authorities). Additionally, SaaS (software as a service) applications are shown as well as three typical data-related applications, namely DBaaS (database as a service), business intelligence tools (BI), and historians (e.g., for process industries). 
 
-[Link](url) and ![Image](src)
-```
+### On premise/edge v. SaaS 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The middle area contains Software AG components or products (depending on the view selected) and comprises two horizontal sections:  
 
-### Jekyll Themes
+1.Software as a Service (SaaS): This section includes all offerings Software AG provides as Software as a Service for the ‘Integration & API’ and ‘IoT & Analytics’ business units. (Additional SaaS offerings on www.softwareag.cloud belong to the business unit ‘Aris & Alfabet’.)  
+2.On-Premise & Edge Deployment: This section depicts components or capabilities which are typically deployed either directly on customer premises or in private clouds. For historical reasons (some) local deployments are called edge deployments in IoT (i.e., at the edge of the cloud, close to the devices and machines). 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bhilchenbach/sagtest.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Data Flows 
 
-### Support or Contact
+The connecting lines between the components show the main flows of data essentially rendering this a data-flow architecture.  
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The term “data” refers to business data, i.e. data that has a direct business value for the organisation using the system. Data not considered business data is not shown, for instance data flows that involve user authentication, usage metrics, machine learning models, code artefacts, or configuration data. 
+
+Among other factors, the actual information flow will of course depend on the products employed. For example, if a customer decides not to use the «Managed File Transfer» capability, «files» would be directly connected to the «Integration & Messaging» capability 
+
+### Aims 
+
+The main aims of this architecture are  
+
+*to give a (visual) summary of the major high-level capabilities  
+*to show how these capabilities map to Software AG products, and  
+*to show how these elements (capabilities or products) are connected to each other through the typical flow of data. 
+
+Even though the reference architecture is quite comprehensive, it neither shows all capabilities nor all products Software AG offers. Please refer to the ‘Products A-Z’ page on www.softwareag.com for a comprehensive list of products.  
+
+Furthermore, this is a reference architecture illustrating typical deployments of Software AG technology with its major and most characteristic communication links. Individual installations will therefore deviate from this reference architecture only for good and sound (architectural) reasons (but we know that this may very well be the case).  
+
+## Product Architecture 
+
+The following diagram depicts the product view of the SAG reference architecture or (short) product architecture. 
+
+![Software AG Reference Archiecture Capability View](/images/Software_AG_Reference_Architecture_10_Product_View.png)
+#### Figure 2. Reference Architecture — Product view. 
+
+A «product» in the aforementioned diagram represents a software component or service which a customer may purchase (in the case of software) or contract (in the case of services) from SAG. 
 
 # Software AG Reference Architecture: Integration & IoT 
 
