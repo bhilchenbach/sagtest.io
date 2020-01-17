@@ -1,5 +1,7 @@
 # Software AG Reference Architecture 
 
+<iframe src="https://github.com/bhilchenbach/sagtest.io/blob/master/Software_AG_Reference_Architecture.html" style="border:none;"></iframe> 
+
 ### Aims 
 
 The main aims of this architecture are  
@@ -66,23 +68,7 @@ The above reference architecture can be used as the basis for your enterprise sp
 
 https://github.com/SoftwareAG/softwareag-reference-architecture 
 
-https://github.com/bhilchenbach/sagtest.io/blob/master/Software_AG_Reference_Architecture.html
+
+
 
 Software AG is happy to work with you on an individual solution architecture that suits your specific requirements. 
-
-!!!!!!!!
-
-
-
-## How to use the diagram? 
-
-Please try out the interactive features of this diagram! Use the green button to toggle between the capability description and product names. Use «mouse over» near any architecture component to display further details about the capability or product. Also, when product names are visible, click on the product to open the details page for the product. 
-
-
-
-
-## Hybrid Architecture 
-
-Many companies employ a “cloud first” strategy, which demands to preferably use cloud-based capabilities (SaaS) where reasonable, while maintaining robust on-premise capabilities in protection of existing investments. The resulting architecture (often called a ‘hybrid’ architecture) requires seamless interoperability of the components on both sides of the firewall. The above architecture illustrates this: the cloud part is shown in the upper part, the on-premise part is shown below (at the bottom), and both parts are connected at various points to create a true hybrid architecture. 
-
-
