@@ -1,22 +1,30 @@
-# Software AG Reference architecture 
+# Software AG Reference Architecture 
 
-This diagram shows the fundamental components and products offered by Software AG in the area of Integration, API, IoT and Analytics. 
+### Aims 
 
-The main purpose of this architecture is to give you a visual summary of the major high-level capabilities, and to show how these map to Software AG products. The diagram is neither showing all capabilities nor all products that Software AG offers. Please refer to the ‘Products A-Z’ page on www.softwareag.com for a comprehensive list of products. 
+The main aims of this architecture are  
 
-Note that this architecture focuses on run-time aspects of our portfolio. That implies that governance and design-time related capabilities and products of the Business Transformation domain, ARIS and Alfabet, are not included here. 
+* to give a (visual) summary of the major high-level capabilities  
+* to show how these capabilities map to Software AG products, and  
+* to show how these elements (capabilities or products) are connected to each other through the typical flow of data. 
+
+This architecture focuses on run-time aspects of our portfolio. That implies that governance and design-time related capabilities and products of the Business Transformation domain, ARIS and Alfabet, are not included here. 
+
+Furthermore, even though the reference architecture is quite comprehensive, it neither shows all capabilities nor all products Software AG offers. Please refer to the ‘Products A-Z’ page on www.softwareag.com for a comprehensive list of products.  
+
+As a reference, this architecture illustrating typical deployments of Software AG technology with its major and most characteristic communication links. Individual installations will therefore deviate from this reference architecture only for good and sound (architectural) reasons (but we know that this may very well be the case).  
 
 
 ## Capability Architecture 
 
 ###  Overview 
 
-We have chosen a “boxes and connectors” style1 for the visual representation of the reference architecture with boxes representing capabilities (or products in the product view) and connectors signifying data (information) flow between the respective elements. 
+We have chosen a “boxes and connectors” style for the visual representation of the reference architecture with boxes representing capabilities (or products in the product view) and connectors signifying data (information) flow between the respective elements. 
 
 The following diagram depicts the capability view of the SAG reference architecture or (short) capability architecture. 
 
 ![Software AG Reference Archiecture Capability View](/images/Software_AG_Reference_Architecture_10_Capability_View.png)
-#### Figure 1.  Reference Architecture — Capability View. 
+#### Figure 1.  Reference Architecture — Capability View 
 
 ### Capabilities 
 
@@ -31,8 +39,8 @@ The right side shows external parties a business typically interacts with, in pa
 
 The middle area contains Software AG components or products (depending on the view selected) and comprises two horizontal sections:  
 
-1.**Software as a Service (SaaS):** This section includes all offerings Software AG provides as Software as a Service for the ‘Integration & API’ and ‘IoT & Analytics’ business units. (Additional SaaS offerings on www.softwareag.cloud belong to the business unit ‘Aris & Alfabet’.)  
-2.**On-Premise & Edge Deployment:** This section depicts components or capabilities which are typically deployed either directly on customer premises or in private clouds. For historical reasons (some) local deployments are called edge deployments in IoT (i.e., at the edge of the cloud, close to the devices and machines). 
+**1. Software as a Service (SaaS):** This section includes all offerings Software AG provides as Software as a Service for the ‘Integration & API’ and ‘IoT & Analytics’ business units. (Additional SaaS offerings on www.softwareag.cloud belong to the business unit ‘Aris & Alfabet’.)  
+**2. On-Premise & Edge Deployment:** This section depicts components or capabilities which are typically deployed either directly on customer premises or in private clouds. For historical reasons (some) local deployments are called edge deployments in IoT (i.e., at the edge of the cloud, close to the devices and machines). 
 
 ### Data Flows 
 
@@ -42,17 +50,6 @@ The term “data” refers to business data, i.e. data that has a direct busines
 
 Among other factors, the actual information flow will of course depend on the products employed. For example, if a customer decides not to use the «Managed File Transfer» capability, «files» would be directly connected to the «Integration & Messaging» capability 
 
-### Aims 
-
-The main aims of this architecture are  
-
-*to give a (visual) summary of the major high-level capabilities  
-*to show how these capabilities map to Software AG products, and  
-*to show how these elements (capabilities or products) are connected to each other through the typical flow of data. 
-
-Even though the reference architecture is quite comprehensive, it neither shows all capabilities nor all products Software AG offers. Please refer to the ‘Products A-Z’ page on www.softwareag.com for a comprehensive list of products.  
-
-Furthermore, this is a reference architecture illustrating typical deployments of Software AG technology with its major and most characteristic communication links. Individual installations will therefore deviate from this reference architecture only for good and sound (architectural) reasons (but we know that this may very well be the case).  
 
 ## Product Architecture 
 
