@@ -2,8 +2,6 @@
 
 link to site https://github.com/bhilchenbach/sagtest.io
 
-<iframe></iframe>
-
 <iframe src="https://github.com/bhilchenbach/sagtest.io/blob/master/Software_AG_Reference_Architecture.html" style="border:none;"></iframe> 
 
 ### Aims 
