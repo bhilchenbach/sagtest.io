@@ -4,7 +4,7 @@ link to site https://github.com/bhilchenbach/sagtest.io
 
 
 von carlos:
-<iframe src="https://feature-reference-architecture--brave-goldstine-8dd131.netlify.com/site/resources.html" style="border:none;"></iframe> 
+<iframe src="https://feature-reference-architecture--brave-goldstine-8dd131.netlify.com/site/reference-architecture/software-ag-reference-architecture.html" style="border:none;"></iframe> 
 
 ### Aims 
 
