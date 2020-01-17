@@ -6,12 +6,6 @@ link to site https://github.com/bhilchenbach/sagtest.io
 von carlos:
 <iframe src="https://feature-reference-architecture--brave-goldstine-8dd131.netlify.com/site/resources.html" style="border:none;"></iframe> 
 
-html auf github:
-<iframe src="https://github.com/bhilchenbach/sagtest.io/blob/master/Software_AG_Reference_Architecture.html" style="border:none;"></iframe> 
-
-
-
-
 ### Aims 
 
 The main aims of this architecture are  
